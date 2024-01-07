@@ -2,212 +2,144 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href = "style.css">
-    <script src="https://kit.fontawesome.com/e7d0ff6f13.js" crossorigin="anonymous"></script>
+    <title>Netflix Website Clone</title>
+    <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
-    <div id = "header">
-        <div class = "container">
-                <nav>
-                    <img src = "../PERSONAL-PORTFOLIO/personal-portfolio-img/images/logo.png" class = logo>
-                    <ul id = "sidemenu">
-                        <li><a href = "#header">Home</a></li>
-                        <li><a href = "#about">About</a></li>
-                        <li><a href = "#services">Services</a></li>
-                        <li><a href = "#portfolio">Portfolio</a></li>
-                        <li><a href = "#contact">Contact</a></li>
-                        <i class="fa-solid fa-xmark" onclick = "closemenu()"></i>
-                    </ul>
-                    <i class="fa-solid fa-bars" onclick = "openmenu()"></i>
-                </nav>
-                <div class = "header-text">
-                    <p>
-                        UI/UX Designer
-                    </p>
-                    <h1>
-                        Hi, I'm <span>Soumil Mithraen</span><br> From India
-                    </h1>
-                </div>
+    <div class="header">
+        <nav>
+            <img src="NETFLIX_IMAGES/logo.png" logo="logo">
+            <div>
+                <button class = "language-btn">English <img src="NETFLIX_IMAGES/down-icon.png" alt=""></button>
+                <button>Sign In</button>
+            </div>
+        </nav>
+        <div class="header-content">
+            <h1>Enjoy big movies, hit series and more from ₹149.</h1>
+            <h3>Join today. Cancel anytime.</h3>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <form class = "email-signup">
+                <input type = "email" placeholder = "Email address" requied>
+                <button type = "submit">Get Started</button>
+            </form>
         </div>
     </div>
+    <div class="features">
+        <div class="row">
+            <div class="text-col">
+                <h2>Enjoy on your TV</h2>
+                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+            </div>
+            <div class="img-col">
+                <img src="NETFLIX_IMAGES/feature-1.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="img-col">
+                <img src="NETFLIX_IMAGES/feature-2.png" alt="">
+            </div>
+            <div class="text-col">
+                <h2>Enjoy</h2>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-col">
+                <h2>Create profiles for kids</h2>
+                <p>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+            </div>
+            <div class="img-col">
+                <img src="NETFLIX_IMAGES/feature-3.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="img-col">
+                <img src="NETFLIX_IMAGES/feature-4.png" alt="">
+            </div>
+            <div class="text-col">
+                <h2>Enjoy on your TV</h2>
+                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+            </div>
+        </div>
+    </div>
+    <div class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <ul class="accordion">
+            <li>
+                <input type="radio" name = "accordion" id = "first">
+                <label for="first">What is Netflix?</label>
+                <div class="content">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
 
-    <!-- ABOUT -->
-    <div id = "about">
-        <div class = "container">
-            <div class = "row">
-                <div class = "about-col-1">
-                    <img src = "../PERSONAL-PORTFOLIO/personal-portfolio-img/images/user.jpeg">
-                </div>
-                <div class = "about-col-2">
-                    <h1 class = "sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ratione odit eius cupiditate et, corrupti quidem cumque, minima ducimus consequatur veniam recusandae, deleniti esse voluptas tempore repellendus. Tempore, vitae velit?</p>
-                    <div class = "tab-titles">
-                        <p class = "tab-links active-link" onclick = "opentab('skills')">Skills</p>
-                        <p class = "tab-links" onclick = "opentab('experience')">Experience</p>
-                        <p class = "tab-links" onclick = "opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id = "skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
-                            <li><span>Web Development</span><br>Web App Development</li>
-                            <li><span>App Development</span><br>Building Android / iOS Applications</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id = "experience">
-                        <ul>
-                            <li><span>2021 - Current</span><br>UI/UX training at ET Institute</li>
-                            <li><span>2019 - 2021</span><br>Team Lead at StarApp LLC.</li>
-                            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id = "education">
-                        <ul>
-                            <li><span>2021</span><br>AKT Academy Matriculation Higher Secondary School</li>
-                            <li><span>2021 - Current</span><br>Sri SaiRam Engineering College</li>
-                        </ul>
-                    </div>
-                </div>
+                    You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</div>
+            </li>
+            <li>
+                <input type="radio" name = "accordion" id = "second">
+                <label for="second">How much does Netflix cost</label>
+                <div class="content">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.</div>
+            </li>
+            <li>
+                <input type="radio" name = "accordion" id = "third">
+                <label for="third">Where can I watch?</label>
+                <div class="content">Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+
+                    You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</div>
+            </li>
+            <li>
+                <input type="radio" name = "accordion" id = "fourth">
+                <label for="fourth">How do I cancel?</label>
+                <div class="content">Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</div>
+            </li>
+            <li>
+                <input type="radio" name = "accordion" id = "sixth">
+                <label for="sixth">What can I watch on Netflix?</label>
+                <div class="content">Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</div>
+            </li>
+            <li>
+                <input type="radio" name = "accordion" id = "seventh">
+                <label for="seventh">Is Netflix good for kids?</label>
+                <div class="content">The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.
+
+                    Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</div>
+            </li>
+        </ul>
+        <small>
+            Ready to watch? Enter your email to create or restart your membership.
+        </small>
+        <form class = "email-signup">
+            <input type = "email" placeholder = "Email address" requied>
+            <button type = "submit">Get Started</button>
+        </form>
+    </div>
+    <div class="footer">
+        <h2>Questions? Call 000-800-919-1694</h2>
+        <div class="row">
+            <div class = 'col'>
+                <a href="#">FAQ</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Privacy</a>
+                <a href="#">Speed Test</a>
+            </div>
+            <div class = 'col'>
+                <a href="#">Help Centre</a>
+                <a href="#">Jobs</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Legal Notices</a>
+            </div>
+            <div class = 'col'>
+                <a href="#">Account</a>
+                <a href="#">Ways to Watch</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Only on Netflix</a>
+            </div>
+            <div class = 'col'>
+                <a href="#">Media Centre</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Contact Us</a>
             </div>
         </div>
+        <button class = "language-btn">English <img src="NETFLIX_IMAGES/down-icon.png" alt=""></button>
+        <p class="copyright-text">Netflix India</p>
     </div>
-    <!-- SERVICES -->
-    <div id = "services">
-        <div class = "container">
-                <h1 class = "sub-title">My Services</h1>
-                <div class="services-list">
-                    <div>
-                        <i class="fa-solid fa-code"></i>
-                        <h2>Web Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta magni exercitationem, maiores repellendus tempora, ipsam iure incidunt voluptatibus non voluptates odio cumque? Molestias sed officiis accusamus ipsam quis harum nisi?</p>
-                        <a href = "#">Learn more</a>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-crop"></i>
-                        <h2>UI/UX Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta magni exercitationem, maiores repellendus tempora, ipsam iure incidunt voluptatibus non voluptates odio cumque? Molestias sed officiis accusamus ipsam quis harum nisi?</p>
-                        <a href = "#">Learn more</a>
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-app-store"></i>
-                        <h2>App Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta magni exercitationem, maiores repellendus tempora, ipsam iure incidunt voluptatibus non voluptates odio cumque? Molestias sed officiis accusamus ipsam quis harum nisi?</p>
-                        <a href = "#">Learn more</a>
-                    </div>
-                </div>
-        </div>
-    </div>
-    <!-- PORTFOLIO -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class = "sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src = "../PERSONAL-PORTFOLIO/personal-portfolio-img/images/work-1.png">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>
-                            The app connects you to the talented people in the world. Download it from playstore.
-                        </p>
-                        <a href = "#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src = "../PERSONAL-PORTFOLIO/personal-portfolio-img/images/work-2.png">
-                    <div class="layer">
-                        <h3>Music App</h3>
-                        <p>
-                            The app connects you to the talented people in the world. Download it from playstore.
-                        </p>
-                        <a href = "#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src = "../PERSONAL-PORTFOLIO/personal-portfolio-img/images/work-3.png">
-                    <div class="layer">
-                        <h3>Online Shopping App</h3>
-                        <p>
-                            The app connects you to the talented people in the world. Download it from playstore.
-                        </p>
-                        <a href = "#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href = "#" class = "btn">See more</a>
-        </div>
-    </div>
-    <!-- CONTACT -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class = "sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>soumilmithraen7@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>0123456789</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/soumil.mithraen?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
-                        <a href="https://instagram.com/soumilz_?igshid=MTNiYzNiMzkwZA=="><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/soumil-mithraen-sa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a href="../PERSONAL-PORTFOLIO/personal-portfolio-img/images/soumil_resume.pdf" download class = "btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name = "submit-to-google-sheet">
-                        <input type = "text" name = "Name" placeholder="Your Name" required>
-                        <input type = "email" name = "Email" placeholder="Your Email" required>
-                        <textarea name = "Message" rows = "6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id = "msg"></span>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>Copyright  © Soumil</p>
-        </div>
-    </div>
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        } 
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-<script>
-    var sidemeu = document.getElementById("sidemenu"); 
-    function opemenu(){
-        sidemeu.style.right = "0px";
-    }
-    function closemenu(){
-        sidemeu.style.right = "-200px";
-    }
-</script>
-<script>
-    const scriptURL = "https://script.google.com/macros/s/AKfycbyFUy-ESYW_X5L8_wc5GuPsItV1ppx9DfLoP7JclhWfsxqxu1Iv5YewuS550b1cjLMY/exec "
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully" 
-            setTimeout(function(){
-                msg.innerHTML = ""
-            }, 5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
 </body>
 </html>
